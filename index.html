@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skin by Vanessa — Expert esthetics and luxury skincare services. Book a facial, skin consultation, or customized treatment in a serene, professional environment." />
+  <meta name="keywords" content="esthetics, facial, skincare, beauty, Vanessa, luxury spa, skin treatments, acne, anti-aging" />
+  <meta property="og:title" content="Skin by Vanessa | Expert Esthetics & Luxury Skincare" />
+  <meta property="og:description" content="Transform your skin with personalized, results-driven treatments by Vanessa. Book your consultation today." />
+  <meta property="og:type" content="website" />
+  <title>Skin by Vanessa | Expert Esthetics &amp; Luxury Skincare</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       SKIP LINK (Accessibility)
+  ============================================================ -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="#hero" class="logo-link" aria-label="Skin by Vanessa — home">
+        <img src="logo.png" alt="Skin by Vanessa — Esthetics &amp; Skincare" class="logo-img" width="180" height="90" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#transformations" class="nav-link">Results</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA + Hamburger -->
+      <div class="header-actions">
+        <a href="#booking" class="btn btn-primary btn-sm header-cta" aria-label="Book an appointment">Book Now</a>
+        <button class="hamburger" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="nav-mobile" id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+      <ul class="nav-mobile-list" role="list">
+        <li><a href="#about" class="nav-mobile-link">About</a></li>
+        <li><a href="#services" class="nav-mobile-link">Services</a></li>
+        <li><a href="#transformations" class="nav-mobile-link">Results</a></li>
+        <li><a href="#testimonials" class="nav-mobile-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-mobile-link">Contact</a></li>
+        <li><a href="#booking" class="btn btn-primary mobile-book-btn">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero-bg-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-badge fade-in" aria-hidden="true">
+          <span>Certified Esthetician &bull; Results-Driven Care</span>
+        </div>
+        <h1 class="hero-headline fade-in fade-in-delay-1">
+          Your Skin Deserves<br />
+          <em>Expert Attention</em>
+        </h1>
+        <p class="hero-subheadline fade-in fade-in-delay-2">
+          Personalized skincare treatments designed around your unique skin—<br class="hero-br" />
+          because radiant skin is a journey, not just a treatment.
+        </p>
+        <div class="hero-actions fade-in fade-in-delay-3">
+          <a href="#booking" class="btn btn-primary btn-lg">Book Your Appointment</a>
+          <a href="#services" class="btn btn-ghost btn-lg">Explore Services</a>
+        </div>
+        <div class="hero-trust fade-in fade-in-delay-4" aria-label="Trust indicators">
+          <div class="hero-trust-item">
+            <i data-lucide="star" aria-hidden="true"></i>
+            <span>500+ Happy Clients</span>
+          </div>
+          <div class="hero-trust-divider" aria-hidden="true"></div>
+          <div class="hero-trust-item">
+            <i data-lucide="award" aria-hidden="true"></i>
+            <span>Licensed Esthetician</span>
+          </div>
+          <div class="hero-trust-divider" aria-hidden="true"></div>
+          <div class="hero-trust-item">
+            <i data-lucide="heart" aria-hidden="true"></i>
+            <span>All Skin Types Welcome</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint fade-in fade-in-delay-4" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <!-- Image column -->
+        <div class="about-image-wrap reveal">
+          <img
+            src="vanessa.png"
+            alt="Vanessa, licensed esthetician, smiling at sunset by the ocean"
+            class="about-photo"
+            width="480"
+            height="600"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Text column -->
+        <div class="about-text reveal reveal-delay-1">
+          <p class="section-eyebrow">Meet Your Esthetician</p>
+          <h2 id="about-heading" class="section-heading">A Passion for Skin,<br /><em>A Gift for Results</em></h2>
+          <p class="about-body">
+            Hi, I'm Vanessa — a licensed esthetician with over eight years of experience helping clients
+            achieve healthier, more luminous skin. My practice is built on one simple belief: that great
+            skin isn't a luxury reserved for a few — it's attainable for everyone with the right care
+            and the right expert in your corner.
+          </p>
+          <p class="about-body">
+            I specialize in customized facial treatments, advanced skincare protocols, and skin
+            consultations that address the root causes of your concerns — not just the surface.
+            Whether you're managing acne, hyperpigmentation, premature aging, or simply want
+            to elevate your glow, I'll craft a plan that's entirely yours.
+          </p>
+          <div class="about-values" role="list" aria-label="Core values">
+            <div class="about-value" role="listitem">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <div>
+                <strong>Personalized Care</strong>
+                <p>Every treatment is tailored to your unique skin type, concerns, and goals.</p>
+              </div>
+            </div>
+            <div class="about-value" role="listitem">
+              <i data-lucide="flask-conical" aria-hidden="true"></i>
+              <div>
+                <strong>Science-Backed Methods</strong>
+                <p>I use clinically proven ingredients and techniques for real, visible results.</p>
+              </div>
+            </div>
+            <div class="about-value" role="listitem">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+              <div>
+                <strong>Safe &amp; Trusted</strong>
+                <p>Licensed, insured, and committed to the highest standards of hygiene and care.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#booking" class="btn btn-primary">Book a Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section services" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">What We Offer</p>
+          <h2 id="services-heading" class="section-heading">Treatments Crafted<br /><em>Just for You</em></h2>
+          <p class="section-subtext">
+            From relaxing signature facials to targeted corrective treatments, every service is
+            customized to your skin's specific needs.
+          </p>
+        </div>
+
+        <div class="services-grid" role="list">
+
+          <!-- Service Card 1 -->
+          <article class="service-card reveal" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <h3 class="service-name">Signature Custom Facial</h3>
+            <p class="service-desc">
+              A comprehensive, fully personalized facial that adapts to your skin on the day of
+              your appointment. Includes deep cleanse, exfoliation, extractions, and a custom mask.
+            </p>
+            <div class="service-footer">
+              <span class="service-duration"><i data-lucide="clock" aria-hidden="true"></i> 60 min</span>
+              <span class="service-price">Starting at $95</span>
+            </div>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="service-card reveal reveal-delay-1" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <i data-lucide="zap"></i>
+            </div>
+            <h3 class="service-name">Advanced Anti-Aging Treatment</h3>
+            <p class="service-desc">
+              Targets fine lines, loss of firmness, and uneven texture using peptide-rich serums,
+              microcurrent technology, and collagen-stimulating techniques.
+            </p>
+            <div class="service-footer">
+              <span class="service-duration"><i data-lucide="clock" aria-hidden="true"></i> 75 min</span>
+              <span class="service-price">Starting at $130</span>
+            </div>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="service-card reveal reveal-delay-2" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <i data-lucide="sun"></i>
+            </div>
+            <h3 class="service-name">Brightening &amp; Glow Facial</h3>
+            <p class="service-desc">
+              Diminish dark spots, hyperpigmentation, and dullness with vitamin C, niacinamide,
+              and brightening enzyme peels for a luminous, even-toned complexion.
+            </p>
+            <div class="service-footer">
+              <span class="service-duration"><i data-lucide="clock" aria-hidden="true"></i> 60 min</span>
+              <span class="service-price">Starting at $110</span>
+            </div>
+          </article>
+
+          <!-- Service Card 4 -->
+          <article class="service-card reveal" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <i data-lucide="shield"></i>
+            </div>
+            <h3 class="service-name">Acne Clarity Treatment</h3>
+            <p class="service-desc">
+              A corrective treatment for acne-prone skin featuring salicylic acid, professional-grade
+              extractions, soothing botanicals, and a personalized home-care plan.
+            </p>
+            <div class="service-footer">
+              <span class="service-duration"><i data-lucide="clock" aria-hidden="true"></i> 60 min</span>
+              <span class="service-price">Starting at $105</span>
+            </div>
+          </article>
+
+          <!-- Service Card 5 -->
+          <article class="service-card reveal reveal-delay-1" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <i data-lucide="droplets"></i>
+            </div>
+            <h3 class="service-name">Hydration Infusion Facial</h3>
+            <p class="service-desc">
+              Deeply restore moisture balance with hyaluronic acid infusion, barrier-repair
+              actives, and a soothing cryo globe massage for instantly plump, dewy skin.
+            </p>
+            <div class="service-footer">
+              <span class="service-duration"><i data-lucide="clock" aria-hidden="true"></i> 60 min</span>
+              <span class="service-price">Starting at $100</span>
+            </div>
+          </article>
+
+          <!-- Service Card 6 -->
+          <article class="service-card reveal reveal-delay-2" role="listitem">
+            <div class="service-icon" aria-hidden="true">
+              <i data-lucide="clipboard-list"></i>
+            </div>
+            <h3 class="service-name">Skin Consultation &amp; Analysis</h3>
+            <p class="service-desc">
+              Not sure where to begin? Book a dedicated 30-minute skin analysis session to receive
+              a personalized skincare roadmap and professional product recommendations.
+            </p>
+            <div class="service-footer">
+              <span class="service-duration"><i data-lucide="clock" aria-hidden="true"></i> 30 min</span>
+              <span class="service-price">Starting at $50</span>
+            </div>
+          </article>
+
+        </div><!-- /.services-grid -->
+
+        <div class="services-cta reveal">
+          <p>Not sure which treatment is right for you?</p>
+          <a href="#contact" class="btn btn-outline">Ask Vanessa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKIN TRANSFORMATIONS ===== -->
+    <section class="section transformations" id="transformations" aria-labelledby="transformations-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Real Results</p>
+          <h2 id="transformations-heading" class="section-heading">Skin Transformations<br /><em>That Speak for Themselves</em></h2>
+          <p class="section-subtext">
+            Every skin journey is unique. Here's a look at some of the incredible transformations
+            achieved through consistent, personalized care.
+          </p>
+        </div>
+
+        <div class="transformations-grid">
+
+          <article class="transformation-card reveal" aria-label="Client transformation 1">
+            <div class="ba-container">
+              <div class="ba-panel">
+                <div class="ba-img-wrap">
+                  <img src="before1.jpg" alt="Before: skin with acne and hyperpigmentation" class="ba-img" loading="lazy" />
+                  <span class="ba-label">Before</span>
+                </div>
+              </div>
+              <div class="ba-panel">
+                <div class="ba-img-wrap">
+                  <img src="after1.jpg" alt="After: clear, even-toned skin" class="ba-img" loading="lazy" />
+                  <span class="ba-label after">After</span>
+                </div>
+              </div>
+            </div>
+            <div class="transformation-info">
+              <h3>Acne &amp; Post-Inflammatory Hyperpigmentation</h3>
+              <p>8-week Acne Clarity protocol</p>
+            </div>
+          </article>
+
+          <article class="transformation-card reveal reveal-delay-1" aria-label="Client transformation 2">
+            <div class="ba-container">
+              <div class="ba-panel">
+                <div class="ba-img-wrap">
+                  <img src="before2.jpg" alt="Before: dull, uneven skin tone" class="ba-img" loading="lazy" />
+                  <span class="ba-label">Before</span>
+                </div>
+              </div>
+              <div class="ba-panel">
+                <div class="ba-img-wrap">
+                  <img src="after2.jpg" alt="After: bright, glowing complexion" class="ba-img" loading="lazy" />
+                  <span class="ba-label after">After</span>
+                </div>
+              </div>
+            </div>
+            <div class="transformation-info">
+              <h3>Dullness &amp; Uneven Skin Tone</h3>
+              <p>3-session Brightening Glow series</p>
+            </div>
+          </article>
+
+          <article class="transformation-card reveal reveal-delay-2" aria-label="Client transformation 3">
+            <div class="ba-container">
+              <div class="ba-panel">
+                <div class="ba-img-wrap">
+                  <img src="before3.jpg" alt="Before: skin showing fine lines and aging" class="ba-img" loading="lazy" />
+                  <span class="ba-label">Before</span>
+                </div>
+              </div>
+              <div class="ba-panel">
+                <div class="ba-img-wrap">
+                  <img src="after3.jpg" alt="After: firmer, smoother, youthful skin" class="ba-img" loading="lazy" />
+                  <span class="ba-label after">After</span>
+                </div>
+              </div>
+            </div>
+            <div class="transformation-info">
+              <h3>Fine Lines &amp; Loss of Firmness</h3>
+              <p>6-session Anti-Aging treatment plan</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="transformations-disclaimer reveal">
+          Individual results may vary. All client photos are shared with consent.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">What Clients Are Saying</p>
+          <h2 id="testimonials-heading" class="section-heading">Loved by Every<br /><em>Skin Type</em></h2>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-text">
+              "Vanessa completely transformed my skin. After years of struggling with hormonal acne,
+              I finally have clear, glowing skin. She takes the time to truly understand your concerns
+              and explains every step of the process. I won't trust my skin with anyone else."
+            </p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">A</div>
+              <div>
+                <cite class="testimonial-name">Ashley M.</cite>
+                <p class="testimonial-treatment">Acne Clarity Treatment</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-text">
+              "I booked the anti-aging facial as a birthday treat and walked out looking refreshed
+              and at least five years younger. The studio is so peaceful and luxurious. Vanessa's
+              touch is incredibly gentle yet effective. Already booked my next session!"
+            </p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">R</div>
+              <div>
+                <cite class="testimonial-name">Rachel T.</cite>
+                <p class="testimonial-treatment">Advanced Anti-Aging Treatment</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-text">
+              "The brightening facial was a total game-changer for my dark spots. Within three sessions
+              my skin tone was noticeably more even. Vanessa is knowledgeable, professional, and
+              genuinely passionate about skincare. Highly, highly recommend."
+            </p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">J</div>
+              <div>
+                <cite class="testimonial-name">Jasmine L.</cite>
+                <p class="testimonial-treatment">Brightening &amp; Glow Facial</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-text">
+              "I was nervous about trying a new esthetician but Vanessa made me feel completely
+              at ease. She gave me the most thorough skin analysis I've ever had and created
+              a realistic treatment plan. My skin has never looked better — thank you, Vanessa!"
+            </p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">M</div>
+              <div>
+                <cite class="testimonial-name">Michelle K.</cite>
+                <p class="testimonial-treatment">Signature Custom Facial</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-text">
+              "The hydration facial left my skin absolutely glowing. I've been dealing with dry,
+              dull skin for years and couldn't believe the difference after just one session.
+              The whole experience feels like a spa retreat. Worth every penny!"
+            </p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">S</div>
+              <div>
+                <cite class="testimonial-name">Sofia R.</cite>
+                <p class="testimonial-treatment">Hydration Infusion Facial</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+              <i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-text">
+              "Vanessa's knowledge of skincare is truly impressive. She recommended the perfect
+              home routine to complement my in-office treatments, and I've seen a dramatic
+              improvement in my skin's texture and brightness. She's not just an esthetician —
+              she's an artist."
+            </p>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">K</div>
+              <div>
+                <cite class="testimonial-name">Kayla B.</cite>
+                <p class="testimonial-treatment">Skin Consultation</p>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div><!-- /.testimonials-grid -->
+      </div>
+    </section>
+
+    <!-- ===== BOOKING CTA ===== -->
+    <section class="section booking-cta" id="booking" aria-labelledby="booking-heading">
+      <div class="booking-cta-bg" aria-hidden="true"></div>
+      <div class="container booking-cta-inner">
+        <div class="booking-cta-content reveal">
+          <p class="section-eyebrow light">Start Your Journey</p>
+          <h2 id="booking-heading" class="section-heading light">
+            Ready for the Skin<br /><em>You've Always Wanted?</em>
+          </h2>
+          <p class="booking-cta-subtext">
+            Book your appointment today and take the first step toward healthier, more
+            radiant skin. New clients receive a complimentary skin consultation with
+            every first treatment.
+          </p>
+          <div class="booking-cta-actions">
+            <a href="mailto:hello@skinbyvanessa.com" class="btn btn-primary btn-lg" aria-label="Book appointment by email">
+              <i data-lucide="calendar-check" aria-hidden="true"></i>
+              Book Your Appointment
+            </a>
+            <a href="tel:+15550000000" class="btn btn-ghost-light btn-lg" aria-label="Call to book">
+              <i data-lucide="phone" aria-hidden="true"></i>
+              Call to Book
+            </a>
+          </div>
+          <p class="booking-note">
+            <i data-lucide="info" aria-hidden="true"></i>
+            Online booking available 24/7 — or call during business hours for same-day appointments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <p class="section-eyebrow">Get in Touch</p>
+          <h2 id="contact-heading" class="section-heading">Let's Connect</h2>
+          <p class="contact-intro">
+            Have a question about a treatment, want to discuss your skin concerns, or
+            need help choosing the right service? I'd love to hear from you.
+          </p>
+
+          <ul class="contact-details" role="list">
+            <li class="contact-detail-item">
+              <div class="contact-icon" aria-hidden="true"><i data-lucide="map-pin"></i></div>
+              <div>
+                <strong>Location</strong>
+                <p>123 Beauty Lane, Suite 200<br />Your City, ST 00000</p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <div class="contact-icon" aria-hidden="true"><i data-lucide="phone"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+15550000000">(555) 000-0000</a></p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <div class="contact-icon" aria-hidden="true"><i data-lucide="mail"></i></div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:hello@skinbyvanessa.com">hello@skinbyvanessa.com</a></p>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <div class="contact-icon" aria-hidden="true"><i data-lucide="clock"></i></div>
+              <div>
+                <strong>Hours</strong>
+                <p>Tuesday – Friday: 9am – 7pm<br />Saturday: 9am – 5pm<br />Sunday – Monday: Closed</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name <span class="required" aria-label="required">*</span></label>
+                <input
+                  type="text"
+                  id="form-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+                <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address <span class="required" aria-label="required">*</span></label>
+                <input
+                  type="email"
+                  id="form-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-service" class="form-label">Service of Interest</label>
+              <select id="form-service" name="service" class="form-input" autocomplete="off">
+                <option value="">— Select a Service —</option>
+                <option value="signature">Signature Custom Facial</option>
+                <option value="antiaging">Advanced Anti-Aging Treatment</option>
+                <option value="brightening">Brightening &amp; Glow Facial</option>
+                <option value="acne">Acne Clarity Treatment</option>
+                <option value="hydration">Hydration Infusion Facial</option>
+                <option value="consultation">Skin Consultation &amp; Analysis</option>
+                <option value="unsure">Not Sure — Help Me Choose</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message <span class="required" aria-label="required">*</span></label>
+              <textarea
+                id="form-message"
+                name="message"
+                class="form-input form-textarea"
+                placeholder="Tell Vanessa about your skin concerns or questions..."
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+              <span class="btn-label">Send Message</span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+            <div class="form-success" id="form-success" role="alert" aria-live="polite" aria-hidden="true">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <p>Thank you! Your message has been sent. Vanessa will be in touch within 24–48 hours.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder reveal" role="img" aria-label="Map showing Skin by Vanessa location at 123 Beauty Lane, Suite 200">
+          <div class="map-inner">
+            <i data-lucide="map" aria-hidden="true"></i>
+            <p>Map Placeholder</p>
+            <span>123 Beauty Lane, Suite 200</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <img src="logo.png" alt="Skin by Vanessa — Esthetics &amp; Skincare" class="logo-img footer-logo-img" width="160" height="80" />
+        <p class="footer-tagline">
+          Personalized skincare treatments for every skin type and concern.
+          Because your skin is your story.
+        </p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Follow Skin by Vanessa on Instagram" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Follow Skin by Vanessa on Facebook" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Follow Skin by Vanessa on TikTok" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul role="list">
+          <li><a href="#about">About Vanessa</a></li>
+          <li><a href="#services">Services &amp; Pricing</a></li>
+          <li><a href="#transformations">Skin Transformations</a></li>
+          <li><a href="#testimonials">Client Reviews</a></li>
+          <li><a href="#booking">Book Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Services List -->
+      <div class="footer-services">
+        <h3 class="footer-heading">Services</h3>
+        <ul role="list">
+          <li>Signature Custom Facial</li>
+          <li>Advanced Anti-Aging</li>
+          <li>Brightening &amp; Glow</li>
+          <li>Acne Clarity Treatment</li>
+          <li>Hydration Infusion</li>
+          <li>Skin Consultation</li>
+        </ul>
+      </div>
+
+      <!-- Contact Mini -->
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p>123 Beauty Lane, Suite 200<br />Your City, ST 00000</p>
+          <p><a href="tel:+15550000000">(555) 000-0000</a></p>
+          <p><a href="mailto:hello@skinbyvanessa.com">hello@skinbyvanessa.com</a></p>
+        </address>
+        <a href="#booking" class="btn btn-primary btn-sm footer-book-btn">Book Now</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="footer-year">2026</span> Skin by Vanessa. All rights reserved.</p>
+        <p class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span aria-hidden="true">&bull;</span>
+          <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+    <i data-lucide="arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
