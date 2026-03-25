@@ -111,7 +111,7 @@ ul { list-style: none; }
 
   /* Layout */
   --container-max: 1200px;
-  --header-height: 88px;
+  --header-height: 108px;
 }
 
 /* ── Skip Link ───────────────────────────────────────────────── */
@@ -332,14 +332,14 @@ ul { list-style: none; }
 /* Logo */
 .logo-link { flex-shrink: 0; }
 .logo-img {
-  height: 72px;
+  height: 96px;
   width: auto;
   object-fit: contain;
   display: block;
 }
 
 @media (max-width: 480px) {
-  .logo-img { height: 56px; }
+  .logo-img { height: 72px; }
 }
 
 /* Desktop Nav */
